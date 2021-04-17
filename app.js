@@ -53,16 +53,17 @@ app.post("/compose", function (req, res) {
 });
 
 app.get("/posts/:postName", function (req, res) {
-  const requestedTitle = _.lowerCase(req.params.postName);
-
+  //   const requestedTitle = _.lowerCase(req.params.postName);
+  const requestedTitle = req.params.postName;
   posts.forEach(function (post) {
-    const storedTitle = _.lowerCase(post.title);
-
+    //     const storedTitle = _.lowerCase(post.title);
+    const storedTitle = post.title;
     if (storedTitle === requestedTitle) {
-      res.render("post", {
-        title: post.title,
-        content: post.content,
-      });
+      console.log("Match found");
+      //       res.render("post", {
+      //         title: post.title,
+      //         content: post.content,
+      //       });
     }
   });
 });
