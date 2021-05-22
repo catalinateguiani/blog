@@ -1,8 +1,12 @@
-.container {
-  padding-top: 20px;
-  padding-bottom: 70px;
+html {
+  min-height: 100%;
+  position: relative;
 }
 
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -13,7 +17,7 @@
   letter-spacing: 5px;
 }
 .navbar-nav li a:hover {
-  color: #204d74 !important;
+  color: #270070 !important;
 }
 
 .footer-padding {
@@ -26,7 +30,7 @@
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #204d74;
+  background-color: #270070;
 }
 
 .footer p {
