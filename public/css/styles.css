@@ -38,3 +38,18 @@ html {
   font-size: 12px;
   color: #fff;
 }
+
+.footer a {
+  color:#fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer a:hover {
+ color: red;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
